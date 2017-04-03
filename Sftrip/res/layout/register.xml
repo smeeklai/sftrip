@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_blue"
+        android:text="Next >>"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_next"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="false" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/showPic1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="false"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logo_new" />
+
+            <TextView
+                android:id="@+id/alert_info1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/showPic1"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Create Account"
+                android:textColor="@color/yellow"
+                android:textSize="33sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/time_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/alert_info1"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="E-mail :"
+                android:textColor="@color/blue"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/regis_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/time_counter"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/time_counter"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/gray" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/alert_info3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time_counter"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="Password :"
+                android:textColor="@color/blue"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/regis_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/alert_info3"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/alert_info3"
+                android:inputType="textPassword"
+                android:textColor="@color/gray" >
+            </EditText>
+            
+            
+            <TextView
+                android:id="@+id/textRe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/alert_info3"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="Confirm Password :"
+                android:textColor="@color/blue"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/comfirm_regis_pass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/textRe"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/textRe"
+                android:inputType="textPassword"
+                android:textColor="@color/gray" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textRe"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="First Name :"
+                android:textColor="@color/blue"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/regis_firstName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/textView4"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/textView4"
+                android:inputType="textPersonName"
+                android:textColor="@color/gray" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/alert_info2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView4"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="Last Name :"
+                android:textColor="@color/blue"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/regis_lastName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/alert_info2"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/alert_info2"
+                android:inputType="textPersonName"
+                android:textColor="@color/gray" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/alert_info2"
+                android:layout_marginLeft="5dp"
+                android:text="Your mobile number :"
+                android:textColor="@color/blue"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/regis_mobilePhone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView6"
+                android:layout_centerInParent="true"
+                android:inputType="phone"
+                android:textColor="@color/gray" >
+            </EditText>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

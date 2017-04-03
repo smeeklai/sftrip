@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">sftrip</string>
+    <string name="please_login">You must login before using!</string>
+    <string name="warning">Warning</string>
+    <string name="login">Login</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="user_location">You are here</string>
+    <string name="enable_internet_connection">You must enable your internet connection before using</string>
+    <string name="enable_GPS">You must enable GPS on your smartphone before using</string>
+    <string name="cancel">Cancel</string>
+    <string name="settings">Settings</string>
+    <string name="null_input">The input cannot be null</string>
+    <string name="congratulation">Congratulation</string>
+    <string name="ok">OK</string>
+    <string name="error">Error</string>
+    <string name="something_wrong">Something is wrong</string>
+    <string name="close">Close</string>
+    <string name="title_activity_trip">TripActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_log_info">LogInfoActivity</string>
+    <string name="logInfo_store_successfully">The log information was stored successfully</string>
+    <string name="user_password_null_input">The username and password cannot be null</string>
+
+    <color name="black">#282828</color>
+    <color name="blue">#4FA8D2</color>
+    <color name="blue2">#68688C</color>
+    <color name="blue3">#016AA3</color>
+    <color name="blue4">#386876</color>
+    <color name="white">#EEEEEE</color>
+    <color name="orange">#DBA75B</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="gray">#E5E4E2</color>
+    <color name="gray2">#b2a5a5</color>
+    <color name="red">#FD0009</color>
+    <color name="gray3">#cccccc</color>
+
+    <string name="edit1_text">EditText Widget</string>
+    <string name="edit2_text">Disabled EditText Widget</string>
+    <string name="title_activity_spinner">SpinnerActivity</string>
+    <string name="spinner_title">Select Day</string>
+    <string name="spinner_title2">Favorite</string>
+    <string name="title_activity_favorite_place">FavoritePlaceActivity</string>
+    <string name="add_favorite_place">Add favorite place</string>
+    <string name="null_favorite_place_name">The favorite place name cannot be null</string>
+    <string name="btn_go">GO</string>
+    <string name="local_service_started">Sftrip is working</string>
+    <string name="local_service_label">Sftrip</string>
+    <string name="local_service_cancel">Sftrip has stopped</string>
+    <string name="title_activity_register_activity2">RegisterActivity2</string>
+    <string name="logout">Logout</string>
+    <string name="sms_are_successfully_sent">SMSs are successfully sent</string>
+    <string name="title_activity_aleart">AleartActivity</string>
+    <string name="title_activity_warning_dialog">WarningDialogActivity</string>
+    <string name="user_status_default">Your status: identifying</string>
+    <string name="remaining_distance_default">Remaining distance: calculating</string>
+    <string name="sftrip_is_working">Sftrip is working</string>
+
+    <color name="orange2">#f08300</color>
+    <color name="red2">#fb000b</color>
+
+    <string name="title_activity_user_arrived">UserArrivedActivity</string>
+    <string name="restart_app">There are some problems on the SfTrip. You might want to kill the app and open it again.</string>
+    <string name="user_still_ok">I am OK</string>
+    <string name="send_sms_now">Send sms</string>
+    <string name="not_sure">not sure</string>
+    <string name="RD_increasing_situation">You are moving away from the destination. The lastest remaining distance has increased more than 50% of the closet remaining distance</string>
+    <string name="user_doesnot_move_situation">Your position is not move toward the destination over 10 minutes</string>
+    <color name="green">#05D600</color>
+    <color name="pink">#ff00d6</color>
+    <color name="violet">#b800ff</color>
+    <color name="gold">#ffe837</color>
+    <color name="blue5">#00aaff</color>
+    <string name="yes_button">Yes</string>
+    <string name="no_button">No</string>
+    <string name="confirm_stop_tracking">Do you want Sftrip to stop tracking?</string>
+    <string name="enable_google_location_service">Please enable Google Location Service before using</string>
+    <string name="trip_was_finished">The trip was finished. Do you want to start a new trip?</string>
+    <string name="notification">Notification</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="title_tutorial">Tutorial</string>
+    <string name="tutorial">Tutorial</string>
+
+</resources>

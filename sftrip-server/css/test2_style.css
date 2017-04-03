@@ -1,0 +1,82 @@
+body {
+
+	padding: 0px;
+	font-size: 25px;
+	background-color: #000000;
+	font-family: "Segoe UI";
+}
+
+#map_canvas {
+	width: 65%;
+	height: 100%;
+	color: #000000;
+	font-family: "Segoe UI";
+	color: #FCB450;
+}
+
+#logo {
+
+	width: 30%;
+}
+
+#relate {
+	width: 65%; 
+	font-family : "Segoe UI";		
+	font-size: 90%;
+
+	
+}
+
+#relate, #logo {
+	height: 18%;
+	margin: 2px 2px 2px 2px;
+	float: left;
+}
+#info {
+
+	height: 100%;
+	width: 35%;
+	float: left;
+	background-color: black;
+}
+
+h2 {
+	margin-top: 3%;
+	width: 80%;
+	font-size: 95%;
+	font-family: "Segoe UI Bold";
+	color: #FCB450;
+}
+#taxiInfo {
+	color: #000000;
+	font-size: 80%;
+	font-family: "Segoe UI";
+	background-color: #FC6B02;
+	margin-top: 2%;
+}
+
+h1 {
+	color: #ffffff;
+	font-size: 110%;
+	font-family: "Segoe UI Bold";
+}
+
+h3 {
+	color: yellow;
+	font-size: 80%;
+	font-family: "Segoe UI";
+	height: 10%;
+}
+#logoBlack {
+	width: 100%;
+	height: 100%;
+}
+
+#mean {
+	width: 96%;
+	height: 6%;
+	margin-top:3%;
+	margin-left: 3%;
+}
+
+

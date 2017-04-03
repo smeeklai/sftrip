@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <string-array name="taxi_color">
+            
+            <item >Blue</item>
+            <item >Green</item>
+            <item >Orange</item>
+            <item >Pink</item>
+            <item >Red</item>
+            <item >Violet</item>
+            <item >Yellow</item>
+            
+            <item >Green-Yellow</item>
+            <item >Blue-Red</item>
+            <item >Blue-Yellow</item>
+            <item >Pink-White</item>
+            <item >Pink-Blue</item>
+            <item >White-Red</item>
+            <item >Violet-Orange</item>
+            <item >Orange-White</item>
+            <item >Yellow-Red</item>
+            <item >Yellow-Gold</item>
+      
+            
+           
+        </string-array>
+                <string-array name="favorite">
+            <item >Favorite Place 1</item>
+            <item >Favorite Place 2</item>
+            <item >Favorite Place 3</item>
+         
+        </string-array>
+    </resources>

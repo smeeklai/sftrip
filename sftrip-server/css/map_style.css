@@ -1,0 +1,103 @@
+body {
+			margin: 0px;
+			padding: 0px;
+			font-family: arial;
+			font-size: 140%;
+			color: #0000FF;
+			background-color: yellow;
+		}
+
+		/* h1 tag style */
+		h1 {
+			margin: 0px;
+			padding: 0px;
+			font-family: arial;
+			font-size: 140%;
+		}
+
+		/* CSS Style Rule for Div having id="outer-container" */
+		/* outer-container will hold the whole assembly of
+		 nested div overlays. */
+		/* It will also center align the design */
+		#outer-container {
+			width: 990px;
+			margin: 0 auto;
+		}
+
+		/* footer CSS Style Rule */
+		#header {
+			width: 990px;
+			height: 90px;
+			background-color: blue;
+		}
+
+		/* footer CSS Style Rule */
+		#footer {
+			width: 100%;
+			height:6%;
+			background-color: #000000;
+		}
+
+		/* content-container CSS Style Rule */
+		/* It will hold the main content of the page. */
+		/* it is the right side column */
+		/* in this 3 columns div layout */
+		#content-container {
+			width: 60%;
+			height: 72%;
+			background-color: blue;
+			margin: 0px 0px 0px 0px;
+			float: left;
+		}
+
+		/* sidebar1 and sidebar2 are 1st and 2nd */
+		/* div columns in this div layout design */
+		/* both are placed at the left side of */
+		/* content container */
+		#sidebar1, #sidebar2 {
+			width: 40%;
+			height: 72%;
+			background-color: #E4AC01;
+			margin: 0px 0px 0px 0px;
+			float: left;
+			font-size: larger;
+		}
+
+		/* CSS rule to override the above styles */
+		/* for sidebar2 */
+		#sidebar2 {
+			background-color: #000000;
+			color: black;
+		}
+
+		/* Top navigation CSS Style Rule */
+		#top-Nav {
+			width: 100%;
+			height: 22%;
+			background-color: #000000;
+			margin-top: 4px;
+		}
+
+
+		#info {
+			height: 15%;
+			width: 80%;
+		}
+
+		#taxi {
+			width: 15%;
+			height: 6%
+		}
+		#taxiInfo {
+			margin-top: 10%;
+			margin-left: 20%;
+			background-image:  url(http://sit-edu4.sit.kmutt.ac.th/csc498/53270327/Sine/proj/img/note.png);
+			font-family:"Tw Cen MT Condensed";
+			font-size: 40px;
+			color: #c35f1d;
+		}
+		
+	#back{
+		margin-left: 1%;
+		margin-top: 4px;
+	}

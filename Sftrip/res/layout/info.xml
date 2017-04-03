@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_orange"
+        android:text="Start"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/btn_start" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/text_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Start :"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/orange"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/edit_start"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/text_start"
+                android:layout_toRightOf="@id/text_start"
+                android:editable="false"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="20dp" >
+
+                <requestFocus android:layout_width="wrap_content" />
+            </EditText>
+
+            <TextView
+                android:id="@+id/text_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_start"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="To :"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/orange"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/edit_to"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/text_to"
+                android:layout_toRightOf="@id/text_to"
+                android:editable="false"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="20dp" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/text_license"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_to"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="License Plate :"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/orange"
+                android:textSize="30dp" />
+
+            <ImageView
+                android:id="@+id/showPic1"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/text_license"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/frame2" />
+
+            <Button
+                android:id="@+id/btn_alert_cancel"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignBaseline="@id/showPic1"
+                android:layout_below="@id/text_license"
+                android:layout_toLeftOf="@id/showPic1"
+                android:background="@drawable/perm_group_camera" >
+            </Button>
+
+            <EditText
+                android:id="@+id/edit_license"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/btn_alert_cancel"
+                android:layout_below="@id/text_license"
+                android:layout_toLeftOf="@id/btn_alert_cancel"
+                android:hint="License Plate"
+                android:textColor="@color/white"
+                android:textSize="24dp" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/text_driver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_license"
+                android:layout_marginLeft="5dp"
+                android:text="Driver Number :"
+                android:textColor="@color/orange"
+                android:textSize="30dp" />
+
+            <ImageView
+                android:id="@+id/showPic2"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/text_driver"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/frame2" >
+            </ImageView>
+
+            <Button
+                android:id="@+id/camera2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignBaseline="@id/showPic2"
+                android:layout_below="@id/text_driver"
+                android:layout_toLeftOf="@id/showPic2"
+                android:background="@drawable/perm_group_camera" >
+            </Button>
+
+            <EditText
+                android:id="@+id/edit_driver_number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/camera2"
+                android:layout_below="@id/text_driver"
+                android:layout_toLeftOf="@id/camera2"
+                android:hint="Driver Number"
+                android:textColor="@color/white"
+                android:textSize="24dp" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/text_color"
+                android:layout_below="@id/showPic2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Taxi Color "
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/orange"
+                android:textSize="30dp" />
+
+            <Spinner
+                android:id="@+id/favorite_taxi_color_options"
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/showPic2"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/text_color"
+                android:drawSelectorOnTop="true" />
+
+            <Spinner
+                android:id="@+id/favorite_taxi_color_options2"
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/showPic2"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/favorite_taxi_color_options"
+                android:drawSelectorOnTop="true" />
+
+            <TextView
+                android:id="@+id/text_gps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_color"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Sending data every "
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/orange"
+                android:textSize="30dp" />
+
+            <RadioGroup
+                android:id="@+id/radioGPS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_gps"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_3mins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/linear8"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="3 mins"
+                    android:textColor="@color/orange"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/rb_5mins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="5 mins"
+                    android:textColor="@color/orange"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/rb_7mins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/linear8"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="7 mins"
+                    android:textColor="@color/orange"
+                    android:textSize="20dp" />
+            </RadioGroup>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

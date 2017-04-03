@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_blue"
+        android:text="Finish"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/btn_finish" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="Relative Mobile Numbers"
+                android:textColor="@color/blue"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_number1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_title"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:text="Mobile Number1 :"
+                android:textColor="@color/blue"
+                android:textSize="27dp" />
+
+            <EditText
+                android:id="@+id/edit_rela_mo_num1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_number1"
+                android:layout_gravity="center"
+                android:hint="Required"
+                android:inputType="phone"
+                android:textColor="@color/white"
+                android:textSize="25dp" >
+
+               
+            </EditText>
+
+            <TextView
+                android:id="@+id/text_number2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_rela_mo_num1"
+                android:layout_marginLeft="10dp"
+                android:text="Mobile Number2 :"
+                android:textColor="@color/blue"
+                android:textSize="27dp" />
+
+            <EditText
+                android:id="@+id/edit_rela_mo_num2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_number2"
+                android:layout_gravity="center"
+                android:hint="Optional"
+                android:inputType="phone"
+                android:textColor="@color/white"
+                android:textSize="25dp" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/text_number3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_rela_mo_num2"
+                android:layout_marginLeft="10dp"
+                android:text="Mobile Number3 :"
+                android:textColor="@color/blue"
+                android:textSize="27dp" />
+
+            <EditText
+                android:id="@+id/edit_rela_mo_num3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_number3"
+                android:layout_centerVertical="true"
+                android:hint="Optional"
+                android:inputType="phone"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

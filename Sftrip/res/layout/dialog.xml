@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="215dp"
+    android:background="@color/black" >
+
+    <TextView
+        android:id="@+id/alert_info1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Save favorite place"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/gray"
+        android:textSize="26dp" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal" >
+
+        <requestFocus />
+
+        <TextView
+            android:id="@+id/time_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:text="Name :"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/gray"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/favorite_place_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+           	android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal" >
+
+        <requestFocus />
+
+        <TextView
+            android:id="@+id/alert_info3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:text="Save to :"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/gray"
+            android:textSize="22dp" />
+
+        <Spinner
+            android:id="@+id/favorite_taxi_color_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/spinner_title2"
+            android:popupBackground="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="170dp"
+        android:orientation="horizontal" >
+
+        <requestFocus />
+
+        <Button
+            android:id="@+id/btn_sfc_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_cancel_dialog"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/btn_sfc_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_save_dialog"
+            android:text="Save" />
+    </LinearLayout>
+
+</RelativeLayout>
